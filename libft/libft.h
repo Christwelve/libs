@@ -6,7 +6,7 @@
 /*   By: cmeng <cmeng@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 08:35:32 by cmeng             #+#    #+#             */
-/*   Updated: 2023/02/02 13:37:06 by cmeng            ###   ########.fr       */
+/*   Updated: 2023/02/02 14:03:36 by cmeng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_strjoin_compact(char **dst, char *src);
+int		ft_calloc2(size_t count, size_t size, void **ptr);
 #endif
