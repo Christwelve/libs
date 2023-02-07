@@ -6,7 +6,7 @@
 /*   By: cmeng <cmeng@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 13:36:45 by cmeng             #+#    #+#             */
-/*   Updated: 2023/02/02 13:53:36 by cmeng            ###   ########.fr       */
+/*   Updated: 2023/02/07 18:06:52 by cmeng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,11 @@
 int	ft_strjoin_compact(char **dst, char *src)
 {
 	char	*new;
+	int		len;
 
-	src[ft_strlen(src) - 1] = 0;
+	len = ft_strlen(src);
+	if (src[len - 1] == '\n')
+		src[len - 1] = 0;
 	new = ft_strjoin(*dst, src);
 	free(*dst);
 	free(src);
