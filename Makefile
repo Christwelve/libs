@@ -33,6 +33,7 @@ CFILES		:=	$(LIBFTCFILES) $(PRINTFCFILES) $(GNLCFILES)
 OFILES		:=	$(CFILES:.c=.o)
 
 GREEN		= 	\033[0;32m
+BLUE		=	\033[0;34m
 WHITE		=	\033[0m
 
 
@@ -47,11 +48,11 @@ $(NAME): $(OFILES)
 
 clean:
 	$(RM) $(OFILES)
-	@echo "$(GREEN)*** Object files cleaned! ***$(WHITE)"
+	@echo "$(BLUE)*** Object files cleaned! ***$(WHITE)"
 
 fclean: clean
 	$(RM) $(NAME)
-	@echo "$(GREEN)*** Executable (.a) file cleaned! ***$(WHITE)"
+	@echo "$(BLUE)*** Executable (.a) file cleaned! ***$(WHITE)"
 
 re: fclean all
 	@echo "$(GREEN)*** Cleaned and rebuilt libs! ***$(WHITE)"
