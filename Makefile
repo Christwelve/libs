@@ -32,27 +32,29 @@ GNLCFILES	:=	$(addprefix $(GNL)/, $(GNLCFILES))
 CFILES		:=	$(LIBFTCFILES) $(PRINTFCFILES) $(GNLCFILES)
 OFILES		:=	$(CFILES:.c=.o)
 
+GREEN		= 	\033[0;32m
+WHITE		=	\033[0m
 
 
 # RULES
 
 $(NAME): $(OFILES)
 	$(AR) $(NAME) $(OFILES)
-	@echo "*** Libs compiled!***"
+	@echo "$(GREEN)*** Libs compiled!***$(WHITE)"
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
 	$(RM) $(OFILES)
-	@echo "*** Object files cleaned! ***"
+	@echo "$(GREEN)*** Object files cleaned! ***$(WHITE)"
 
 fclean: clean
 	$(RM) $(NAME)
-	@echo "*** Executable (.a) file cleaned! ***"
+	@echo "$(GREEN)*** Executable (.a) file cleaned! ***$(WHITE)"
 
 re: fclean all
-	@echo "*** Cleaned and rebuilt libs! ***"
+	@echo "$(GREEN)*** Cleaned and rebuilt libs! ***$(WHITE)"
 
 all: $(NAME)
 
