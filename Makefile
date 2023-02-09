@@ -48,11 +48,11 @@ $(NAME): $(OFILES)
 
 clean:
 	$(RM) $(OFILES)
-	@echo "$(BLUE)*** Object files cleaned! ***$(WHITE)"
+	@echo "$(BLUE)*** Object files libs cleaned! ***$(WHITE)"
 
 fclean: clean
 	$(RM) $(NAME)
-	@echo "$(BLUE)*** Executable (.a) file cleaned! ***$(WHITE)"
+	@echo "$(BLUE)*** Executable (.a) file libs cleaned! ***$(WHITE)"
 
 re: fclean all
 	@echo "$(GREEN)*** Cleaned and rebuilt libs! ***$(WHITE)"
