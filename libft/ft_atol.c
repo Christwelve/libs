@@ -6,13 +6,13 @@
 /*   By: cmeng <cmeng@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 08:44:47 by cmeng             #+#    #+#             */
-/*   Updated: 2023/02/11 08:47:01 by cmeng            ###   ########.fr       */
+/*   Updated: 2023/02/11 10:20:32 by cmeng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long	ft_atoi_long(const char *str)
+long	ft_atol(const char *str)
 {
 	int		i;
 	long	output;
