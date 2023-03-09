@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin_compact.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cmeng <cmeng@student.42.fr>                +#+  +:+       +#+        */
+/*   By: christianmeng <christianmeng@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 13:36:45 by cmeng             #+#    #+#             */
-/*   Updated: 2023/02/07 18:06:52 by cmeng            ###   ########.fr       */
+/*   Updated: 2023/03/09 20:07:58 by christianme      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ int	ft_strjoin_compact(char **dst, char *src)
 	int		len;
 
 	len = ft_strlen(src);
-	if (src[len - 1] == '\n')
-		src[len - 1] = 0;
 	new = ft_strjoin(*dst, src);
 	free(*dst);
 	free(src);
