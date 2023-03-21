@@ -36,6 +36,9 @@ GREEN		= 	\033[0;32m
 BLUE		=	\033[0;34m
 WHITE		=	\033[0m
 
+ifdef DEBUG
+	CFLAGS += -g
+endif
 
 # RULES
 
