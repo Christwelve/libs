@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cmeng <cmeng@student.42.fr>                +#+  +:+       +#+        */
+/*   By: christianmeng <christianmeng@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 08:35:32 by cmeng             #+#    #+#             */
-/*   Updated: 2023/02/12 16:25:18 by cmeng            ###   ########.fr       */
+/*   Updated: 2023/04/03 12:45:50 by christianme      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,4 +68,5 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_strjoin_compact(char **dst, char *src);
 int		ft_calloc2(size_t count, size_t size, void **ptr);
+void 	ft_free2(void **arr);
 #endif
