@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_free2.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: christianmeng <christianmeng@student.42    +#+  +:+       +#+        */
+/*   By: cmeng <cmeng@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 12:42:59 by christianme       #+#    #+#             */
-/*   Updated: 2023/04/03 12:47:58 by christianme      ###   ########.fr       */
+/*   Updated: 2023/04/05 11:45:21 by cmeng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_free2(void **arr)
+void	ft_free2(void **arr)
 {
-    void **tmp;
-    
-    tmp = arr;
-    while (*tmp != NULL)
-    {
-        free(*tmp);
-        tmp++;
-    }
-    free(arr);
+	void	**tmp;
+
+	tmp = arr;
+	while (*tmp != NULL)
+	{
+		free(*tmp);
+		tmp++;
+	}
+	free(arr);
 }
